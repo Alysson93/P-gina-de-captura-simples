@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.w50 {
+	width: 50%;
+	padding: 0 2%;
+}
+
+.w33 {
+	width: 33.3%;
+	padding: 0 2%;
+}
+
+.center {
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+header {
+	height: 60px;
+	background-color: #212343;
+}
+
+/* caso usar imagem para logo, ativar este estilo:
+header img {
+	margin: 19px;
+	width: 145px;
+	height: 21px;
+	color: #fff;
+}
+*/
+
+/*caso não usar imagem no logo, usar este estilo:*/
+header h2 {
+	color: #fff;
+	padding: 15px;
+}
+
+main {
+	height: 557px;
+	background-image: url('img/header_bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main .center {
+	height: 100%;
+}
+
+.form {
+	padding: 10px;
+	width: 400px;
+	height: calc(100% + 30px);
+	background-color: #fff;
+	float: right;
+	position: relative;
+	top: -15px;
+	border: 8px solid rgba(120,120,120,0.7);
+	background-clip: padding-box;
+}
+
+.form h2 {
+	font-weight: normal;
+	font-size: 20px;
+	color: #999;
+}
+
+.input-container {
+	margin-top: 20px;
+}
+
+.input-container label, .warning {
+	display: inline-block;
+	width: 100%;
+	font-size: 17px;
+	color: #bbb;
+	font-weight: bold;
+}
+
+.input-container input {
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	color: #aaa;
+	padding: 0 10px;
+}
+
+.form p {
+	margin: 20px 0;
+}
+
+.input-submit-container {
+	text-align: center;
+}
+
+.form input[type=submit] {
+	width: 280px;
+	height: 56px;
+	text-transform: uppercase;
+	background-color: #363a6d;
+	color: #fff;
+	font-size: 25px;
+	margin: 0 auto;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	border-bottom: 5px solid #4a5097;
+}
+
+.form input[type=submit]:hover {
+	background-color: #323665;
+}
+
+.list {
+	float: left;
+	width: 519px;
+	height: 270px;
+	background-color: rgba(33,35,67,0.7);
+	margin-top: 100px;
+	padding: 30px;
+}
+
+.list ul {
+	list-style-position: inside;
+}
+
+.list li {
+	color: #fff;
+	margin-top: 18px;
+}
+
+#texto {
+	padding: 80px 0 40px 0;
+	background-color: #ddd;
+	text-align: center;
+}
+
+#texto h2 {
+	font-weight: normal;
+}
+
+#texto p {
+	width: 698px;
+	margin: 15px 0;
+	display: inline-block;
+	text-align: justify;
+}
+
+.arrow {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/arrow.png');
+	background-size: 100% 100%;
+	position: relative;
+	top: 60px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+#info {
+	padding: 90px 0;
+}
+
+#info h2 {
+	text-align: center;
+	color: #462663;
+	font-weight: normal;
+}
+
+#info article {
+	text-align: center;
+	margin-top: 40px;
+	padding: 30px;
+}
+
+#info img {
+	width: 70px;
+}
+
+#info p {
+	text-align: justify;
+	padding: 10px 25px;
+}
+
+footer {
+	padding: 30px 0;
+	border-top: 4px solid #888;
+	text-align: center;
+	color: #888;
+}
+
+footer p {
+	margin-top: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.w33 {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.w33, .w50 {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 810px) {
+	.form {
+		margin: 20px 0;
+		width: 90vw;
+		border: 8px solid rgba(120,120,120,0.7);
+		background-clip: padding-box;	
+	}
+
+	.input-container input {
+		width: 100%;
+	}
+
+	.list {
+		align-self: center;
+		width: 100%;
+	}
+
+	header h2 {
+		text-align: center;
+	}
+
+}
